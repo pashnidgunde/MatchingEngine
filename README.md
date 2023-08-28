@@ -1,4 +1,4 @@
-# OrderCache
+# A simple MatchingEngine
 Read Me:
  
   - Implement an in-memory cache of order objects that supports 
@@ -91,46 +91,43 @@ Read Me:
 
     - Example 1:
 
-        Orders in cache:
-            OrdId1 SecId1 Sell 100 User10 Company2
-            OrdId2 SecId3 Sell 200 User8 Company2
-            OrdId3 SecId1 Buy 300 User13 Company2
-            OrdId4 SecId2 Sell 400 User12 Company2
-            OrdId5 SecId3 Sell 500 User7 Company2
-            OrdId6 SecId3 Buy 600 User3 Company1
-            OrdId7 SecId1 Sell 700 User10 Company2
-            OrdId8 SecId1 Sell 800 User2 Company1
-            OrdId9 SecId2 Buy 900 User6 Company2
-            OrdId10 SecId2 Sell 1000 User5 Company1
-            OrdId11 SecId1 Sell 1100 User13 Company2
-            OrdId12 SecId2 Buy 1200 User9 Company2
-            OrdId13 SecId1 Sell 1300 User1 Company
+        -Orders in cache:
+            -OrdId1 SecId1 Sell 100 User10 Company2
+            -OrdId2 SecId3 Sell 200 User8 Company2
+            -OrdId3 SecId1 Buy 300 User13 Company2
+            -OrdId4 SecId2 Sell 400 User12 Company2
+            -OrdId5 SecId3 Sell 500 User7 Company2
+            -OrdId6 SecId3 Buy 600 User3 Company1
+            -OrdId7 SecId1 Sell 700 User10 Company2
+            -OrdId8 SecId1 Sell 800 User2 Company1
+            -OrdId9 SecId2 Buy 900 User6 Company2
+            -OrdId10 SecId2 Sell 1000 User5 Company1
+            -OrdId11 SecId1 Sell 1100 User13 Company2
+            -OrdId12 SecId2 Buy 1200 User9 Company2
+            -OrdId13 SecId1 Sell 1300 User1 Company
 
-        Total qty matching for security ids:
-            SecId1 300
-            SecId2 1000
-            SecId3 600
+        -Total qty matching for security ids:
+            -SecId1 300
+            -SecId2 1000
+            -SecId3 600
 
 
     - Example 2:
 
-        Orders in cache:
-            OrdId1 SecId3 Sell 100 User1 Company1
-            OrdId2 SecId3 Sell 200 User3 Company2
-            OrdId3 SecId1 Buy 300 User2 Company1
-            OrdId4 SecId3 Sell 400 User5 Company2
-            OrdId5 SecId2 Sell 500 User2 Company1
-            OrdId6 SecId2 Buy 600 User3 Company2
-            OrdId7 SecId2 Sell 700 User1 Company1
-            OrdId8 SecId1 Sell 800 User2 Company1
-            OrdId9 SecId1 Buy 900 User5 Company2
-            OrdId10 SecId1 Sell 1000 User1 Company1
-            OrdId11 SecId2 Sell 1100 User6 Company2
+        -Orders in cache:
+            -OrdId1 SecId3 Sell 100 User1 Company1
+            -OrdId2 SecId3 Sell 200 User3 Company2
+            -OrdId3 SecId1 Buy 300 User2 Company1
+            -OrdId4 SecId3 Sell 400 User5 Company2
+            -OrdId5 SecId2 Sell 500 User2 Company1
+            -OrdId6 SecId2 Buy 600 User3 Company2
+            -OrdId7 SecId2 Sell 700 User1 Company1
+            -OrdId8 SecId1 Sell 800 User2 Company1
+            -OrdId9 SecId1 Buy 900 User5 Company2
+            -OrdId10 SecId1 Sell 1000 User1 Company1
+            -OrdId11 SecId2 Sell 1100 User6 Company2
 
-        Total qty matching for security ids:
-       SecId1 900
-            SecId2 600
-            SecId3 0
-
-
-
+        -Total qty matching for security ids:
+            -SecId1 900
+            -SecId2 600
+            -SecId3 0
