@@ -1,7 +1,6 @@
-# OrderCache
-Read Me:
+# Simple Order Cache and Matcher
  
-  - Implement an in-memory cache of order objects that supports 
+  - An in-memory cache of order objects that supports 
     adding new orders, removing existing orders and matching buy and sell orders. 
 		- An "order" is a request to buy or sell a financial security (eg. bond, stock, 
 		  commodity, etc.)
@@ -131,6 +130,5 @@ Read Me:
        SecId1 900
             SecId2 600
             SecId3 0
-
 
 
